@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct NaiGroceryStoreApp: App {
+    @StateObject private var groceryStore = GroceryStore() // Shared data for items
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GroceryStoreView() 
         }
     }
 }
